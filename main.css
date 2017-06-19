@@ -1,0 +1,86 @@
+.fixed-header {
+	position: fixed;
+	top: 0;
+	right : 0;
+	width: 100%;
+	background-color: #E91E63;
+	height: 9%
+}
+
+.left-3-margin {
+	margin-left: 3%
+}
+
+.left-1-margin {
+	margin-left: 1%
+}
+
+.right-1-margin {
+	margin-right: 1%
+}
+
+.right-3-margin {
+	margin-right: 3%
+}
+
+.top-small-margin{
+	margin-top: 0.5%
+}
+
+.bottom-small-margin{
+	margin-bottom: 0.5%
+}
+
+.top-1-padding{
+	padding-top: 1%
+}
+
+.width-65{
+	width: 65%
+}
+
+.width-55{
+	width: 55%
+}
+
+.color-white{
+	color: white
+}
+
+.inline{
+	float: left
+}
+
+.margin-top-header-height{
+	margin-top: 5%
+}
+
+.prevent-scrolling-left-column{
+	position: fixed;
+
+}
+
+
+.width-25{
+	width: 25%
+}
+
+.width-10{
+	width: 10%
+}
+
+.width-20{
+	width: 20%
+}
+
+.width-50{
+	width:50%;
+}
+
+.left-3-padding{
+	padding-left: 3%
+}
+
+.right-3-padding{
+	padding-right: 3%
+}
