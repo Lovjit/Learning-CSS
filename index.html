@@ -3,7 +3,13 @@
 <head>
 	<link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="enlightened.css">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 	<script src="https://use.fontawesome.com/9d879a3b5d.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+    <script src="main.js"></script>
 </head>
 
 <body style="background-color: grey;height: 100%;margin: 0%;">
@@ -21,10 +27,10 @@
 
 </div>
 
-<div id="main-content" class="row margin-top-header-height container">
+<div id="main-content" class="margin-top-header-height container">
 		
 		<div id="content-col-1" class="col-1" style="background-color: white">
-			<center>Home</center>
+            <center>Home</center>
 			<hr>
 			<center>Messenger</center>
 			<hr>
@@ -42,35 +48,31 @@
 		</div>
 
 		<div id="content-col-2" class="col-6">
-			<div class="container" style="background-color:white;">
+            {{#customer-info}}
+			<div class="container" style="background-color:white;overflow:hidden;margin-bottom:15px;">
                 <div class="row">
                     <div class="col-12">
                         <p>
                             <i class="fa fa-user fa-2x inline " aria-hidden="true"></i>
                             <span style="padding-left:2%">
-                            <a style="color:blue;"> Lovjit Singh</a> shared <a style="color:blue;"> Bla Bla Page</a> </span><br>
-                            <span style="padding-left:2%">posted <span style="color:grey">5hrs </span>ago </span></p>
+                            <a style="color:blue;"> {{name}}</a> shared <a style="color:blue;"> {{page}} Page</a> </span><br>
+                            <span style="padding-left:2%">posted <span style="color:grey">{{time}} </span>ago </span></p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-12">
-                        <p>Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.
-                    Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.
-                    Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.
-                    Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.Check this paragraph.</p>
+                        <p>{{content}}</p>
                     </div>
                 </div>
 			</div>
+            {{/customer-info}}
+            
 		</div>
     
-        <div id="" class="col-2 inline top-small-margin" style="border: dotted;">
-		
-				<p>Hello Column-3</p>
-
-		</div>
-
-
-
+    <div class="col-2" style="">
+        jdowwehdwwehowoewoe
+    </div>
+    
 </div>
 
 

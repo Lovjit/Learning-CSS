@@ -3,7 +3,7 @@
 	top: 0;
 	right : 0;
 	width: 100%;
-	background-color: #E91E63;
+	background-color: green;
 	height: 9%
 }
 
@@ -52,7 +52,7 @@
 }
 
 .margin-top-header-height{
-	margin-top: 5%
+	margin-top: 6%
 }
 
 .prevent-scrolling-left-column{
