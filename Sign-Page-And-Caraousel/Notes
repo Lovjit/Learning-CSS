@@ -1,0 +1,31 @@
+Wrapping javascript code inside function
+------------------------------------------
+
+What you're doing when you write (function() { ... code ... })(), is you're making the code inside a function literal (meaning the whole "object" is actually a function). After that, you're self-invoking the function (the final ()). So the major advantage of this as I mentioned before, is that you can have private methods/functions and properties:
+
+(function() {
+   var private_var;
+
+   function private_function() {
+     //code
+   }
+})()
+
+The neat thing is that you can also define things inside and expose it to the outside world so (an example of namespacing so you can basically create your own library/plugin):
+
+var myPlugin = (function() {
+ var private_var;
+
+ function private_function() {
+ }
+
+ return {
+    public_function1: function() {
+    },
+    public_function2: function() {
+    }
+ }
+})()
+Now you can call myPlugin.public_function1(), but you cannot access private_function()! So pretty similar to a class definition.
+
+Event Bubbling link: https://javascript.info/bubbling-and-capturing
